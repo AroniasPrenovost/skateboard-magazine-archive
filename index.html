@@ -28,17 +28,21 @@
       Google Tag Manager 
 
     -->
+    <!-- 
+
+        Google tag (gtag.js) 
+
+        Stream name: "Skateboard magazine archive"
+
+
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RGM8XXNG4"></script>
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-XXXX");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8RGM8XXNG4');
     </script>
     <!-- 
 
@@ -48,6 +52,8 @@
     </head>
     <body>
         <h1>Skateboard Magazine Archive</h1>
+
+        <p>The goal of this site is to digitally archive print skateboard media (sfrom my basement). 
 
         <!-- 
 
@@ -76,11 +82,12 @@
         <ul>
             <li>
                 08/2006 - #310: 
-                <a href="./pdfs/thrasher_08_2006.pdf" target="_blank" title="Thrasher Issue #310">
-                    PDF
-                </a>
-                |
                 <a href="https://drive.google.com/file/d/1JtymqtUwUisKe-8OLWIstcmtID40VsPN/view" target="_blank" title="Thrasher Issue #310">Download</a>
+
+                | 
+
+                                <a href="./pdfs/thrasher_08_2006.pdf" target="_blank" title="Thrasher Issue #310">
+                    PDF</a> (in progress)
             </li>
         </ul>
 
