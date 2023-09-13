@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Skateboard Magazine Archive</title>
-        <meta name="description" content="description" />
-        <meta name="author" content="author" />
-        <meta name="keywords" content="keywords" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="UTF-8" />
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skateboard Magazine Archive</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
     <!-- 
-
       water css
-
-    -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
-
+      
+      -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" /> -->
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      /* Container for flexboxes */
+      .row {
+      display: flex;
+      flex-wrap: wrap;
+      }
+      /* Create four equal columns */
+      .column {
+      flex: 50%;
+      padding: 12px;
+      border: 1px solid #dbdbdb;
+      /*margin: 5px;*/
+      }
+      .column:nth-child(1): {
+      border-right:0px;
+      }
+      /* On screens that are 992px wide or less, go from four columns to two columns */
+      @media screen and (max-width: 992px) {
+      .column {
+      flex: 50%;
+      }
+      .column:nth-child(1): {
+      border-right:1px solid #dbdbdb;a
+      }
+      }
+      /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+      .row {
+      flex-direction: column;
+      }
+      }
+    </style>
     <!-- 
-  
       favicon
-
-    -->
+      
+      -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -30,100 +61,88 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
     <!-- 
-
       Google Tag Manager 
-
-    -->
+      
+      -->
     <!-- 
-
-        Google tag (gtag.js) 
-
-        Stream name: "Skateboard magazine archive"
-
-
-    -->
+      Google tag (gtag.js) 
+      
+      Stream name: "Skateboard magazine archive"
+      
+      
+      -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RGM8XXNG4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+      
       gtag('config', 'G-8RGM8XXNG4');
     </script>
     <!-- 
-
       End Google Tag Manager 
-
-    -->
-    </head>
-    <body>
-        <h1>Skateboard Magazine Archive</h1>
-
-        <p>The goal of this site is to digitally archive print skateboard media (sfrom my basement). 
-
-        <!-- 
-
-          notes
-
-        -->
-
-        <h2>
-            Notes
-        </h2>
-
-        <p><strong>08/01/2023</strong> - 
-            I'm trying to commit to uploading 1 magazine a month, but still figuring out the best process to get clear scans without damaging the magazine. Right now I'm loosening the pages from the outer binding to ensure a flat scan
-            surface. I hate to damage the magazine, but I suppose I'll clip the pages together when I'm done and put them back into storage for safekeeping.
-        </p>
-
-
-        <!-- 
-
+      
+      -->
+  </head>
+  <body>
+    <h1>Skateboard Magazine Archive</h1>
+    <div class="row">
+      <div class="column">
+        <!--
           archive
-
-        -->
-
-        <h2>Archive</h2>
+          
+          -->
+        <h2>
+          Mag Archive
+        </h2>
         <h4>Thrasher</h4>
         <ul>
-            <li>
-                08/2006 - #310: 
-                <a href="https://drive.google.com/file/d/1WAhd_GgZGN6ea5Vj-8J7VhBENS4xisxS/view?usp=sharing" target="_blank" title="Thrasher Issue #310">Download</a>
-                | 
-                                <a href="./pdfs/thrasher_08_2006.pdf" target="_blank" title="Thrasher Issue #310">
-                    PDF</a> <em>(in progress)</em>
-            </li>
+          <li>
+            08/2006: 
+            <a href="https://drive.google.com/file/d/1WAhd_GgZGN6ea5Vj-8J7VhBENS4xisxS/view?usp=drive_link" target="_blank" title="Thrasher Issue #310">Download</a>
+            <!--     <a href="./pdfs/thrasher_08_2006.pdf" target="_blank" title="Thrasher Issue #310">
+              PDF</a>  -->
+            (PDF in progress)
+          </li>
         </ul>
-
-       <!-- 
-
-          other resources
-
-        -->
-        <h2>Other resouces</h2>
+        <h4>The Skateboard Mag</h4>
         <ul>
-            <li>
-                <a href="https://skatemagarchive.blogspot.com/" target="_blank" title="Skate Mag Archive">
-                    Skate Mag Archive
-                </a>
-            </li>
-            <li>
-                <a href="https://lookbacklibrary.org/about" target="_blank" title="Look Back Library">
-                    Look Back Library
-                </a>
-            </li>
+          <li>
+            01/2008: 
+            <a href="https://drive.google.com/file/d/1qF-Aw098vr5NWGfbS-rZ6AA8w9kj3K1w/view?usp=drive_link" target="_blank" title="The Skateboard Mag">Download</a>
+            <!--     <a href="./pdfs/theskateboardmag_01_2008.pdf" target="_blank" title="The Skateboard Mag - 01/2008">
+              PDF</a>   -->
+            (PDF in progress)
+          </li>
         </ul>
-
+      </div>
+      <div class="column">
+        <!--
+          notes
+          
+          -->
+        <h2>
+          About
+        </h2>
+        <p>
+          The goal of this site is to digitally archive print skateboard media. 
+        <p> 
+          I'm still figuring out the best process to get clear scans without damaging the magazine. For Thrashers, I'm loosening the pages from the outer binding to ensure a flat scan
+          surface. The Skateboard Mag is a little more difficult to separate and I've had to use an exacto knife.
+        </p>
+        <p>
+          There was a phase where I cut out some of the better pictures from some magazines and put them in a binder. I will call those out when they pop up. 
+        </p>
         <!-- 
-
           Contact
-
-        -->
-
-        <p><strong>Interested in contributing?</strong><br><br>Send questions, suggestions, or scanned files to <a href="mailto:aronprenovostmktg@gmail.com" title="aronprenovostmktg@gmail.com">aronprenovostmktg@gmail.com</a>.</p>
-        <p>This page is <a href="https://github.com/AroniasPrenovost/skateboard-magazine-archive" title="GitHub repo" target="_blank">open source</a>.</p>
-
-    </body>
+          
+          -->
+        <p><strong>Interested in contributing?</strong></p>
+        <p>Send questions, suggestions, or scanned files to <a href="mailto:aronprenovostmktg@gmail.com" title="aronprenovostmktg@gmail.com">aronprenovostmktg@gmail.com</a>.</p>
+        <p>
+          This page is <a href="https://github.com/AroniasPrenovost/skateboard-magazine-archive" title="GitHub repo" target="_blank">open source</a>. 
+      </div>
+    </div>
+  </body>
 </html>
